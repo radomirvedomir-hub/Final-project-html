@@ -1,0 +1,284 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Quicksand', sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  width: 100%;
+  max-width: 1620px;
+  margin: 0 auto;
+  padding: 0 150px;
+}
+
+.header {
+  background: #0c70ac;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ffffff;
+}
+
+.header-container {
+  display: flex;
+  justify-content: center;
+}
+
+.header-list {
+  display: flex;
+  gap: 65px;
+}
+
+.header-link {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.header-link span {
+  color: #f4de1f;
+}
+
+.hero {
+  background: #0c70ac;
+  height: 600px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.hero-wrapper {
+  width: 663px;
+}
+
+.hero-title {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 80px;
+  color: #ffffff;
+  margin: 0 0 20px 0;
+  text-transform: capitalize;
+}
+
+.hero-description {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  color: rgba(255, 255, 255, 0.5);
+  margin: 0;
+}
+
+.hero-container > img {
+  width: 510px;
+  height: 600px;
+  object-fit: cover;
+  transform: scaleX(-1);
+}
+
+.destinations {
+  padding-top: 80px;
+  padding-bottom: 110px;
+}
+
+.destinations-title {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  text-align: center;
+  margin: 0 0 50px 0;
+  text-transform: capitalize;
+}
+
+.destinations-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.destinations-item {
+  width: 520px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.destinations-item img {
+  width: 520px;
+  height: 342px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 30px;
+}
+
+.destinations-subtitle {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+  font-size: 36px;
+  margin: 0 0 10px 0;
+}
+
+.destinations-description {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 24px;
+  margin: 0 0 20px 0;
+}
+
+.destinations-link {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 24px;
+  color: #7c7c7c;
+  text-decoration: underline;
+}
+
+.blog {
+  background: #e6e6e6;
+  padding: 80px 0 100px 0;
+}
+
+.blog-title {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  text-align: center;
+  margin: 0 0 60px 0;
+}
+
+.blog-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.blog-item {
+  width: 520px;
+  height: 617px;
+  background: #ffffff;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.blog-item img {
+  width: 520px;
+  height: 342px;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+
+.blog-date {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16px;
+  color: #7c7c7c;
+  margin: 25px 40px 15px 40px;
+}
+
+.blog-subtitle {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  margin: 0 40px 15px 40px;
+  color: #000000;
+}
+
+.blog-description {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20px;
+  color: #7c7c7c;
+  margin: 0 40px;
+  line-height: 1.3;
+}
+
+.galery {
+  background: #001c2d;
+  color: #ffffff;
+  padding: 80px 0;
+}
+
+.galery-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.galery-title {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  margin: 0 0 40px 0;
+}
+
+.galery-list {
+  display: grid;
+  grid-template-columns: repeat(3, 150px);
+  gap: 25px;
+}
+
+.galery-item img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.galery-item:nth-child(3) img {
+  transform: scaleX(-1);
+}
+
+.galery-list-two {
+  display: grid;
+  grid-template-columns: repeat(2, 230px);
+  row-gap: 30px;
+  column-gap: 80px;
+}
+
+.galery-link {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.footer {
+  background: #001c2d;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-text {
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.5);
+  margin: 0;
+  text-align: center;
+}
